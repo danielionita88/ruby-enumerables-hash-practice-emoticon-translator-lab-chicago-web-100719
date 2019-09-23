@@ -4,8 +4,8 @@ require 'pry'
 
 
 
-def load_library(file)
-  emoticons = YAML.load_file(file)
+def load_library(path)
+  emoticons = YAML.load_file(path)
   list = {}
   emoticons.each do |meaning,emojis|
     if !list[:get_meaning]
@@ -24,16 +24,19 @@ end
 
 
 
-def get_japanese_emoticon(file,emoji)
-  list = load_library(file)
+def get_japanese_emoticon(path),emoji)
+  list = load_library(path)
   if list[:get_emoticon][emoji]
     list[:get_emoticon][emoji]
   else 'Sorry, that emoticon was not found'
   end
 end
 
-def get_english_meaning
-  # code goes here
+
+
+
+def get_english_meaning(path,emoji)
+  list = load_library(path)
 end
 
 
