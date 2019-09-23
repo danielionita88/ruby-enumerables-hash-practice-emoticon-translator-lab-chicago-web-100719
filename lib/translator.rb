@@ -26,11 +26,8 @@ end
 
 def get_japanese_emoticon(file,emoji)
   list = load_library(file)
-  list.each do |meaning,emojis|
-    if emojis[0] = emoji p emoji
-    else p "this emoticon is not found"
-  end
-  
+  if list[:get_emoticon] = emoji
+
 end
 
 def get_english_meaning
