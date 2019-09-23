@@ -17,10 +17,12 @@ def load_library(file)
     list[:get_emoticon] = {emojis[0] =>emojis[1]}
     else list[:get_emoticon][emojis[0]]=emojis[1]
     end
-    
   end
   list
 end
+
+
+
 
 def get_japanese_emoticon
   # code goes here
@@ -29,3 +31,10 @@ end
 def get_english_meaning
   # code goes here
 end
+
+
+
+
+
+
+
