@@ -37,9 +37,10 @@ end
 
 def get_english_meaning(path,emoji)
   list = load_library(path)
-  if list[:get_emoticon][emoji]
-  binding.pry
-end
+  if list[:get_meaning][emoji]
+    list[:get_meaning][emoji]
+  else "Sorry, that emoticon was not found"
+  end
 end
 
 
