@@ -29,9 +29,7 @@ def get_japanese_emoticon(file,emoji)
   if list[:get_emoticon][emoji]
     list[:get_emoticon][emoji]
   else 'Sorry, that emoticon was not found'
-    binding.pry
   end
-
 end
 
 def get_english_meaning
