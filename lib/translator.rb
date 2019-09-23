@@ -37,6 +37,9 @@ end
 
 def get_english_meaning(path,emoji)
   list = load_library(path)
+  if list[:get_emoticon][emoji]
+  binding.pry
+end
 end
 
 
