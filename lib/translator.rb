@@ -24,7 +24,7 @@ end
 
 
 
-def get_japanese_emoticon(path),emoji)
+def get_japanese_emoticon(path,emoji)
   list = load_library(path)
   if list[:get_emoticon][emoji]
     list[:get_emoticon][emoji]
